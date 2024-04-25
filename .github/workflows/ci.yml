@@ -39,7 +39,4 @@ jobs:
 
       - name: Deploy to Server
         run: |
-          # Replace these commands with your deployment steps
           echo "Deploying login page to production server..."
-          # Example: scp or rsync commands to transfer files to the server
-
