@@ -8,7 +8,7 @@ public class OrderTest {
     @Test
     public void testAddToCart() {
         Order order = new Order();
-        Item item = new Item("TestItem", 10.0, 5, "Test Description", null);
+        Item item = new Item("TestItem", 10.0, 5, "Test Description");
         order.addToCart(item);
         assertTrue(order.getCart().contains(item));
     }
@@ -16,7 +16,7 @@ public class OrderTest {
     @Test
     public void testRemoveFromCart() {
         Order order = new Order();
-        Item item = new Item("TestItem", 10.0, 5, "Test Description", null);
+        Item item = new Item("TestItem", 10.0, 5, "Test Description");
         order.addToCart(item);
         order.removeFromCart(item);
         assertTrue(order.getCart().isEmpty());
@@ -25,8 +25,8 @@ public class OrderTest {
     @Test
     public void testUpdatePriceTotal() {
         Order order = new Order();
-        Item item1 = new Item("Item1", 10.0, 2, "Description1", null);
-        Item item2 = new Item("Item2", 15.0, 1, "Description2", null);
+        Item item1 = new Item("Item1", 10.0, 2, "Description1");
+        Item item2 = new Item("Item2", 15.0, 1, "Description2");
         order.addToCart(item1);
         order.addToCart(item2);
         order.updatePriceTotal();
