@@ -27,8 +27,8 @@ public class RestaurantTest {
         Restaurant restaurant = new Restaurant();
         Order order1 = new Order();
         Order order2 = new Order();
-        Item item1 = new Item("Item1", 10.0, 2, "Description1", null);
-        Item item2 = new Item("Item2", 15.0, 1, "Description2", null);
+        Item item1 = new Item("Item1", 10.0, 2, "Description1");
+        Item item2 = new Item("Item2", 15.0, 1, "Description2");
         order1.addToCart(item1);
         order1.addToCart(item2);
         order2.addToCart(item1);
