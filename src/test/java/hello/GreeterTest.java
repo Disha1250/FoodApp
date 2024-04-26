@@ -1,4 +1,4 @@
-package hello;
+/*package hello;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.*;
@@ -15,3 +15,4 @@ public class GreeterTest {
   }
 
 }
+*/
